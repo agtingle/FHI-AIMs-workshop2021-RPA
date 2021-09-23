@@ -8,11 +8,10 @@ This is a brief introduction of RPA application and the solution of several comm
 
  The memory cost of RPA is extremely huge, therefore, such kind of "stuck" would often happen
 ![Image text](https://i.loli.net/2021/09/23/mjdDXqMEynCvBsr.png)
- ![Image text](https://raw.githubusercontent.com/agtingle/FHI-AIMs-workshop2021-RPA/main/img/stop_at_coulomb.png)
 
 get stuck at "Finished with initialization of Coulomb interaction matrix" and
 
-![Image text](https://raw.githubusercontent.com/agtingle/FHI-AIMs-workshop2021-RPA/main/img/stop_at_energy_cal.png)
+![Image text](https://i.loli.net/2021/09/23/qwbT5jcaCBfgpOF.png)
 
 get stuck at RPA correlation energy calculation over all k-points. If your output file ends at the above position, and you also receive some error message like “MPI error”, **it’s always the consequence of insufficient memory**. There are two memory “peaks” during the entire calculation, as you can see above, the initialization of Coulomb matrix(based on auxiliary basis sets, which are always about 5 to 7 times compared to original numerical atomic orbitals) and the summation of RPA correlation energy over all k-points.  The coulomb matrix V (also the response function <a href="https://www.codecogs.com/eqnedit.php?latex=\chi_{0}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\chi_{0}" title="\chi_{0}" /></a>) has such dimension <a href="https://www.codecogs.com/eqnedit.php?latex=N_{aux}*N_{aux}*N_{irk}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?N_{aux}*N_{aux}*N_{irk}" title="N_{aux}*N_{aux}*N_{irk}" /></a> , which means the growth of basis sets (more atoms, larger basis sets) causes much more computational time rather than the growth of k-points. Right now, NAO-VCC-3Z basis might be the largest basis sets you may want to use; NAO-VCC-4Z sometimes works but only for lighter elements ( <10 ) and less atoms in unit cell (up to 4-6 atoms).
 

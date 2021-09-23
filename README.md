@@ -75,13 +75,13 @@ rpa_tot_en=   -54787.27720168
 ------------------------------------------------------------------------------
 ```
 
-$$E^{PBE}$$  :  DFT total energy from PBE functional, find  `DFT/HF total energy` or `total_energy`;
+<a href="https://www.codecogs.com/eqnedit.php?latex=E^{PBE}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?E^{PBE}" title="E^{PBE}" /></a>  :  DFT total energy from PBE functional, find  `DFT/HF total energy` or `total_energy`;
 
-$$E_{xc}^{PBE}$$  :  exchange-correlation energy from PBE functional, find  `en_xc`;
+<a href="https://www.codecogs.com/eqnedit.php?latex=E_{xc}^{PBE}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?E_{xc}^{PBE}" title="E_{xc}^{PBE}" /></a>  :  exchange-correlation energy from PBE functional, find  `en_xc`;
 
-$$𝐸^{𝐸𝑋@𝑃𝐵𝐸}$$  :  exact-exchange energy based on PBE functional, find  `eex_energy`;
+<a href="https://www.codecogs.com/eqnedit.php?latex=𝐸^{𝐸𝑋@𝑃𝐵𝐸}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?𝐸^{𝐸𝑋@𝑃𝐵𝐸}" title="𝐸^{𝐸𝑋@𝑃𝐵𝐸}" /></a>  :  exact-exchange energy based on PBE functional, find  `eex_energy`;
 
-$$𝐸_{𝑐}^{𝑅𝑃𝐴@𝑃𝐵𝐸}$$:  RPA correlation energy based on PBE functional, find  `RPA correlation energy`;
+<a href="https://www.codecogs.com/eqnedit.php?latex=E_{c}^{RPA@PBE}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?E_{c}^{RPA@PBE}" title="E_{c}^{RPA@PBE}" /></a>:  RPA correlation energy based on PBE functional, find  `RPA correlation energy`;
 
 There are other information you might be interested in, such as number block in the middle
 

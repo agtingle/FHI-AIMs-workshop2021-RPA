@@ -103,7 +103,9 @@ In general the RPA+SE or RPA+rSE is recommended to avoid underbinding situation.
 #### Basis sets
 
 This section is about the choice of basis sets. In FHI-AIMs, there are two basis sets widely used in RPA calculation: the traditional "Tier" basis, and  "NAO-VCC-nZ" basis. These are both atomic-centered orbitals, while NAO-VCC-nZ is a special basis set that come from optimizing the RPA total energy of atom for each element (Right now only H - Ar available), and, can be applied a quite simple two-point extrapolation to complete basis set(CBS)
+
 <a href="https://www.codecogs.com/eqnedit.php?latex=CBS(3,4)=\frac{E(3)&space;3^3&space;-&space;E(4)&space;4^3}{3^3-4^3&space;}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?CBS(3,4)=\frac{E(3)&space;3^3&space;-&space;E(4)&space;4^3}{3^3-4^3&space;}" title="CBS(3,4)=\frac{E(3) 3^3 - E(4) 4^3}{3^3-4^3 }" /></a>
+
 This is a sample of how to obtain complete basis set result CBS(3,4) via NAO3Z and NAO4Z. For more details, take a look at this paper from Igor Ying Zhang:
 
 https://iopscience.iop.org/article/10.1088/1367-2630/15/12/123033/meta . I would suggest users perform RPA calculation under NAO-VCC-nZ basis sets if possible; Test the convergence of total energy or energy difference between phases carefully and choose NAO-VCC-2Z as first step to obtain an overall comprehension (physical property, phase stability, computational costs) of your studying object; Due to the absence of NAO-VCC-nZ basis beyond Ar, e.g. the transition metals, we can only use TIER basis at this moment, but you can still get reliable results using TIER basis.
@@ -112,7 +114,7 @@ https://iopscience.iop.org/article/10.1088/1367-2630/15/12/123033/meta . I would
 
 #### K-grids
 
-The convergence of K-grids is much easier compared to basis sets. You may still find out that the convergence of total energy still require a large amount of k-points (to reach e.g. the common convergence criteria <1 meV/atom), while the energy difference between phases could dramatically converge with fewer k-points. If you are using NAO-VCC-nZ basis sets, you can also  extrapolate results of two different k-grid to a infinite k-grid($$N>>\infty$$)  called "CKM", also see https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.106.153003, but this is not necessary and results from direct calculation are always good enough to solve you problems.
+The convergence of K-grids is much easier compared to basis sets. You may still find out that the convergence of total energy still require a large amount of k-points (to reach e.g. the common convergence criteria <1 meV/atom), while the energy difference between phases could dramatically converge with fewer k-points. If you are using NAO-VCC-nZ basis sets, you can also  extrapolate results of two different k-grid to a infinite k-grid(<a href="https://www.codecogs.com/eqnedit.php?latex=N_{k}>>\infty" target="_blank"><img src="https://latex.codecogs.com/gif.latex?N_{k}>>\infty" title="N_{k}>>\infty" /></a>)  called "CKM", also see https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.106.153003, but this is not necessary and results from direct calculation are always good enough to solve you problems.
 
 
 

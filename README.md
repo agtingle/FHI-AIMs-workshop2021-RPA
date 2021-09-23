@@ -79,7 +79,7 @@ rpa_tot_en=   -54787.27720168
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=E_{xc}^{PBE}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?E_{xc}^{PBE}" title="E_{xc}^{PBE}" /></a>  :  exchange-correlation energy from PBE functional, find  `en_xc`;
 
-<a href="https://www.codecogs.com/eqnedit.php?latex=𝐸^{𝐸𝑋@𝑃𝐵𝐸}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?𝐸^{𝐸𝑋@𝑃𝐵𝐸}" title="𝐸^{𝐸𝑋@𝑃𝐵𝐸}" /></a>  :  exact-exchange energy based on PBE functional, find  `eex_energy`;
+<a href="https://www.codecogs.com/eqnedit.php?latex=E^{EX@PBE}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?E^{EX@PBE}" title="E^{EX@PBE}" /></a>  :  exact-exchange energy based on PBE functional, find  `eex_energy`;
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=E_{c}^{RPA@PBE}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?E_{c}^{RPA@PBE}" title="E_{c}^{RPA@PBE}" /></a>:  RPA correlation energy based on PBE functional, find  `RPA correlation energy`;
 

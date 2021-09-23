@@ -29,6 +29,7 @@ where `n` is the number of threads you want to use; Generally the default value 
 #### How to interpret the output
 
 This section would give out the meaning of important output energy. The RPA total energy (for example RPA@PBE) is defined as
+<a href="https://www.codecogs.com/eqnedit.php?latex=E^{RPA@PBE}=E^{PBE}-E_{xc}^{PBE}&plus;E^{EX@PBE}&plus;E_{c}^{RPA@PBE}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?E^{RPA@PBE}=E^{PBE}-E_{xc}^{PBE}&plus;E^{EX@PBE}&plus;E_{c}^{RPA@PBE}" title="E^{RPA@PBE}=E^{PBE}-E_{xc}^{PBE}+E^{EX@PBE}+E_{c}^{RPA@PBE}" /></a>
 $$
 𝐸^{𝑅𝑃𝐴@𝑃𝐵𝐸}=𝐸^{𝑃𝐵𝐸}− 𝐸_{𝑥𝑐}^{𝑃𝐵𝐸}+𝐸^{𝐸𝑋@𝑃𝐵𝐸} + 𝐸_{𝑐}^{𝑅𝑃𝐴@𝑃𝐵𝐸}
 $$
